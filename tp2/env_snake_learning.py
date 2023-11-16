@@ -3,6 +3,9 @@ import torch
 import gymnasium
 from stable_baselines3 import PPO, DQN
 import os
+
+os.environ['QT_QPA_PLATFORM'] = 'offscreen'
+
 import time
 from snakeenv import SnakeEnv
 

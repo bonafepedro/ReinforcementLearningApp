@@ -17,6 +17,8 @@ from stable_baselines3.common.monitor import Monitor
 from stable_baselines3.common.vec_env import DummyVecEnv
 from stable_baselines3.common.callbacks import EvalCallback, StopTrainingOnRewardThreshold
 
+os.environ['QT_QPA_PLATFORM'] = 'offscreen'
+
 SNAKE_LEN_GOAL = 30
 
 def collision_with_apple(apple_position, score, num_apples):

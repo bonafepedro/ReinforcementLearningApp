@@ -1,10 +1,13 @@
 from stable_baselines3 import PPO
 import os
+
+os.environ['QT_QPA_PLATFORM'] = 'offscreen'
+
 from snakeenv import SnakeEnv
 import time
 
 
-def main(timesteps, iters):
+def main(timesteps =10, iters =10):
 	models_dir = f"training3/models/{int(time.time())}/"
 	logdir = f"training3/logs/{int(time.time())}/"
 
