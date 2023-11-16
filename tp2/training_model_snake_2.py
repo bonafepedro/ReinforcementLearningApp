@@ -4,7 +4,7 @@ from snakeenv import SnakeEnv
 import time
 
 
-def main (timesteps, iters):
+def main(timesteps, iters):
 	models_dir = f"training3/models/{int(time.time())}/"
 	logdir = f"training3/logs/{int(time.time())}/"
 

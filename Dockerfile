@@ -6,5 +6,5 @@ WORKDIR /tp2
 
 COPY . /tp2
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install -r requirements2.txt
 
