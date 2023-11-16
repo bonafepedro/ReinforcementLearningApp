@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get upgrade -y && apt-get install python3 -y && apt-get install python3-pip -y 
 
-RUN pip3 install -r ./requirements.txt
+RUN pip3 install -r requirements.txt
 
 RUN mkdir /tp2
 
