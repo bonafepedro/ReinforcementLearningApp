@@ -42,10 +42,7 @@ Estuvimos teniendo algunos problemas vinculados al uso de gymnasium puntualmente
 ```
 Nos saltaba el error de no poseer las weels. Buscando en stackoverflow vimos que necesitabamos instalar el paquete swing pero aun instalándolo esto no se solucionó. Intentamos también levantar una máquina virtual con virtualbox pero ocurrieron problemas vinculados al espacio en la computadora en que se ejecutó. 
 
-## Proximos pasos
-El paso siguiente es encapsular en un conteiner de docker todo el programa y las herramientas necesarias para poder usarlo así se puede disponibilizar en cualquier ambiente.
 
-Sin más esperamos que sea correcto y cualquier corrección o sugerencia de mejora se agradece. 
 
 Gracias y saludos
 
