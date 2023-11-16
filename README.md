@@ -32,7 +32,6 @@ docker run -it rl_proyect
 ```
 
 Finalmente una vez dentro del container tenemos dos archivos que son los ejecutables de la app env_snake_learning.py y training_model_snake_2.py el primero tiene establecido como Hiperparámetros TIMESTEPS = 10 y 10000 iteraciones de aprendizaje. En el segundo te pide que le indiques por consola los hiperparámetros y corre con los que le provees. 
-En ambos se puede visualizar la interaccion de la viborita con el entorno e ir observando como aprende. 
 
 ## Problemas y errores 
 Estuvimos teniendo algunos problemas vinculados al uso de gymnasium puntualmente por la necesidad de instalar el paquete box2d que al querer ejecutar la linea:
