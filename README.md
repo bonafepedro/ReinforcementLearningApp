@@ -5,6 +5,32 @@ En el siguiente tp, en nuestro mayor esfuerzo por comprender y aprender las téc
 A partir del mismo buscamos implementar un modelo de aprendizaje por refuerzos visto en clase y transformar el juego en un entorno de stable-baselines esto lo hicimos apoyandonos en los tutoriales de sentdex creador de contenido en youtube sobre python e inteligencia artificial. 
 link al canal: https://www.youtube.com/@sentdex
 
+
+## Creación del entorno y ejecución de los archivos .py de entrenamiento
+
+Para solucionar el clásico dilema de "en mi máquina funciona" el trabajo se encuentra en un container de Docker para el cual es necesario ejecutar la siguiente serie de pasos.
+
+En primer lugar es necesario clonar el repositorio a nivel local 
+
+```
+git clone https://github.com/bonafepedro/ReinforcementLearningApp.git
+```
+
+En segundo lugar es necesario correr el docker build al Dockerfile para ello es necesario tener instalado docker previamente. 
+
+```
+docker build --tag RLproyect .
+```
+
+Lanzamos el contenedor.
+
+```
+docker run -it RLproyect
+```
+
+Finalmente una vez dentro del container tenemos dos archivos que son los ejecutables de la app env_snake_learning.py y training_model_snake_2.py el primero tiene establecido como Hiperparámetros TIMESTEPS = 10 y 10000 iteraciones de aprendizaje. En el segundo te pide que le indiques por consola los hiperparámetros y corre con los que le provees. 
+En ambos se puede visualizar la interaccion de la viborita con el entorno e ir observando como aprende. 
+
 ## Problemas y errores 
 Estuvimos teniendo algunos problemas vinculados al uso de gymnasium puntualmente por la necesidad de instalar el paquete box2d que al querer ejecutar la linea:
 ```

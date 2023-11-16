@@ -9,7 +9,6 @@ import cv2
 import random
 import time
 from collections import deque
-
 import gymnasium as gym
 from gymnasium import spaces
 
