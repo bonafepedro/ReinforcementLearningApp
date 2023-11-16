@@ -114,7 +114,7 @@ class SnakeEnv(gym.Env):
         euclidean_dist_to_apple = np.linalg.norm(np.array(self.snake_head) - np.array(self.apple_position))
         self.total_reward = ((250 - euclidean_dist_to_apple) + apple_reward)/100
 
-        print(self.total_reward)
+        #print(self.total_reward)
         #self.total_reward = len(self.snake_position) - 3  # default length is 3
         self.reward = self.total_reward - self.prev_reward
         self.prev_reward = self.total_reward
