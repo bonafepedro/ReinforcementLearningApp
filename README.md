@@ -18,14 +18,17 @@ git clone https://github.com/bonafepedro/ReinforcementLearningApp.git
 
 En segundo lugar es necesario correr el docker build al Dockerfile para ello es necesario tener instalado docker previamente. 
 
+En sistemas windows es necesario tener abierto Docker Desktop
+
 ```
-docker build --tag RLproyect .
+cd ./ReinforcementLearningApp
+docker build --tag rl_proyect .
 ```
 
 Lanzamos el contenedor.
 
 ```
-docker run -it RLproyect
+docker run -it rl_proyect
 ```
 
 Finalmente una vez dentro del container tenemos dos archivos que son los ejecutables de la app env_snake_learning.py y training_model_snake_2.py el primero tiene establecido como Hiperparámetros TIMESTEPS = 10 y 10000 iteraciones de aprendizaje. En el segundo te pide que le indiques por consola los hiperparámetros y corre con los que le provees. 
